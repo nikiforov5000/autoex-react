@@ -1,13 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.grey {
+  background-color: #999999;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.main-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1999;
+  overflow: hidden;
+  @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+}
+.main-wrap #page-wrapper {
+  position: relative;
+  background-color: #242424;
+}
+.main-wrap h1 {
+  font-size: 68px;
+}
+.main-wrap h2 {
+  font-size: 36px;
+}
+.main-wrap h3 {
+  font-size: 24px;
+}
+.main-wrap h4 {
+  font-size: 28px;
+}
+.main-wrap p {
+  font-size: 10px;
+}
+.main-wrap h1, .main-wrap h2, .main-wrap h3, .main-wrap h4, .main-wrap p {
+  line-height: 130%;
+}
+.main-wrap .text-center {
+  width: 100%;
+  text-align: center;
+}
+.main-wrap .box-shadow {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}
+.main-wrap p, .main-wrap a {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main-wrap h1, .main-wrap h2, .main-wrap h3, .main-wrap h4 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+}
+.main-wrap .text-white {
+  color: white;
+}
+.main-wrap .section {
+  background-color: white;
+  width: 1280px;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  z-index: 1;
+}
+.main-wrap .section .wrapper {
+  display: flex;
+}
+.main-wrap .section .wrapper .row {
+  display: flex;
+  flex-flow: row;
+}
+.main-wrap .section .wrapper .col {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 auto;
+  position: relative;
+  align-items: start;
+  justify-items: center;
+  justify-content: flex-start;
+}
+.main-wrap .section .wrapper .col.col-wrapper {
+  padding: 0;
+}
+.main-wrap .section .wrapper .col.col-0 {
+  flex: 0 1 0%;
+}
+.main-wrap .section .wrapper .col.col-1 {
+  flex: 0 1 8.3333333333%;
+}
+.main-wrap .section .wrapper .col.col-2 {
+  flex: 0 1 16.6666666667%;
+}
+.main-wrap .section .wrapper .col.col-3 {
+  flex: 0 1 25%;
+}
+.main-wrap .section .wrapper .col.col-4 {
+  flex: 0 1 33.3333333333%;
+}
+.main-wrap .section .wrapper .col.col-5 {
+  flex: 0 1 41.6666666667%;
+}
+.main-wrap .section .wrapper .col.col-6 {
+  flex: 0 1 50%;
+}
+.main-wrap .section .wrapper .col.col-7 {
+  flex: 0 1 58.3333333333%;
+}
+.main-wrap .section .wrapper .col.col-8 {
+  flex: 0 1 66.6666666667%;
+}
+.main-wrap .section .wrapper .col.col-9 {
+  flex: 0 1 75%;
+}
+.main-wrap .section .wrapper .col.col-10 {
+  flex: 0 1 83.3333333333%;
+}
+.main-wrap .section .wrapper .col.col-11 {
+  flex: 0 1 91.6666666667%;
+}
+.main-wrap .section .wrapper .col.col-12 {
+  flex: 0 1 100%;
+}
+.main-wrap .section .wrapper .col.col-space-between {
+  justify-content: space-between;
+}
+.main-wrap .section .button-container {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.main-wrap .section .button {
+  margin: 0px auto 30px 0;
+  padding: 3px 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: aqua;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2078431373);
+}
+.main-wrap .section .button.button-purple {
+  background-image: linear-gradient(to right, #e53e83, #db3e99);
+}
+.main-wrap .section .button.button-orange {
+  background-color: #e46828;
+}
+.main-wrap .section .button.button-full-width {
+  display: flex;
+  justify-content: center;
+}
+.main-wrap .section .button.button-green {
+  background-color: #079aa5;
+}
+.main-wrap .section .hover-overlay {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.144);
+  opacity: 0;
+}
+.main-wrap .section .hover-element {
+  position: relative;
+  display: inline-block;
+}
+.main-wrap .section .background-container {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}/*# sourceMappingURL=index.css.map */

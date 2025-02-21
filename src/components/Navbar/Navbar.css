@@ -1,0 +1,31 @@
+.section.section-navbar {
+  position: fixed;
+  max-width: 1280px;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: rgba(22, 0, 29, 0.7058823529);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.section.section-navbar .navbar-container {
+  margin: 5px auto 5px 100px;
+}
+.section.section-navbar .navbar-container .navbar-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.section.section-navbar .navbar-container .navbar-list .navbar-item {
+  margin-right: 20px;
+}
+.section.section-navbar .navbar-container .navbar-list .navbar-item a {
+  text-decoration: none;
+  color: white;
+}
+.section.section-navbar .navbar-container .navbar-list .navbar-item a img {
+  width: 35px;
+}/*# sourceMappingURL=Navbar.css.map */

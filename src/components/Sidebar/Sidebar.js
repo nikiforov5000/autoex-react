@@ -5,7 +5,7 @@ import './Sidebar.css';
 const Sidebar = () => {
 
   return (
-    <div class="col col-3 right-side">
+    <div class="right-side">
       <div class="corner"></div>
       <svg width="0" height="0">
         <defs>

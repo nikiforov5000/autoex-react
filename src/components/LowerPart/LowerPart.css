@@ -1,1 +1,29 @@
-/*# sourceMappingURL=LowerPart.css.map */
+.lower-part {
+  padding: 80px 50px 0 100px;
+  padding-bottom: auto;
+}
+.lower-part .left {
+  padding-right: 60px;
+}
+.lower-part .left h2 {
+  display: block;
+}
+.lower-part .left p {
+  width: 100%;
+  display: block;
+}
+.lower-part .left p.description {
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+.lower-part .right {
+  padding-right: 0px;
+}
+.lower-part .right img {
+  width: 400px;
+  max-width: 100%;
+}
+.lower-part .right p.description {
+  margin: 8px 0;
+  font-weight: 700;
+}/*# sourceMappingURL=LowerPart.css.map */

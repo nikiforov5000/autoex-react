@@ -17,19 +17,20 @@ const Layout = () => {
         </header>
 
         <div className='section section-content'>
-          <main className='wrapper'>
-            <div class="col col-9 col-wrapper left-side">
+
+          <div className='wrapper'>
+            <main className='col col-9 col-wrapper left-side'>
               <Banner />
               <LowerPart />
-            </div>
-          </main>
+            </main>
 
-          <aside className='sidebar'>
-            <Sidebar />
-          </aside>
+            <aside className='col col-3 right-side'>
+              <Sidebar />
+            </aside>
 
-          <footer className='footer'>
-          </footer>
+            <footer className='footer'>
+            </footer>
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import './Navbar.css';
+import './Banner.css';
 
 const Banner = () => {
 
@@ -18,9 +18,9 @@ const Banner = () => {
           <div class="button-container"><a href="#" class="button button-purple">Button</a></div>
         </div>
         <div class="right">
-          <div class="image-container girl"></div>
+          <div class="image-container girl"><img src="/images/banner-woman.jpg" alt="Pink-purple photo of a girl" /></div>
           <div class="background-container">
-            <h3 class="text-white text-center">some thing</h3>
+            <h3 class="text-white text-center">some <br /> thing</h3>
           </div>
         </div>
       </div>

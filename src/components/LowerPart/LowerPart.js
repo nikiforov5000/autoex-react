@@ -18,7 +18,7 @@ const LowerPart = () => {
         </div>
         <div class="col col-5">
           <div class="right">
-            {/* <img src="images/purple-screen.png" alt="purple colored image with screens"> */}
+            <img src="/images/purple-screen.png" alt="purple colored image with screens" />
             <p class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>

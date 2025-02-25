@@ -1,0 +1,26 @@
+.item {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-bottom: 55px;
+}
+.item .background-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 170px;
+  padding: 0 30px;
+  margin-bottom: 12px;
+}
+.item .description {
+  margin-bottom: 10px;
+}
+.item.item-1 .background-container {
+  background-image: radial-gradient(410px, rgba(224, 103, 30, 0.9), black), url("/public/images/banner-bg-texture-bw.jpg");
+}
+.item.item-2 .background-container {
+  background-image: radial-gradient(410px, rgba(15, 128, 124, 0.9), black), url("/public/images/banner-bg-texture-bw.jpg");
+}
+.item.item-3 .background-container {
+  background-image: radial-gradient(410px, rgba(58, 25, 56, 0.9), black), url("/public/images/banner-bg-texture-bw.jpg");
+}/*# sourceMappingURL=SideItem.css.map */

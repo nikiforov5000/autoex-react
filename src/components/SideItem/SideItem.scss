@@ -1,0 +1,55 @@
+.item {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-bottom: 55px;
+  
+  .background-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 170px;
+    padding: 0 30px;
+    margin-bottom: 12px;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+  }
+  
+  $background-image-item: url('/public/images/banner-bg-texture-bw.jpg');
+  $gradient-radius: 410px; 
+  
+  &.item-1 {
+    
+    .background-container {
+      background-image: radial-gradient(
+        $gradient-radius, 
+        rgba(224,103, 30, 0.9), 
+        black), 
+        $background-image-item ;
+    }
+  }
+  
+  &.item-2 {
+    
+    .background-container {
+      background-image: radial-gradient(
+        $gradient-radius, 
+        rgba(15,128, 124, 0.9), 
+        black), 
+        $background-image-item;
+    }
+  }
+
+  &.item-3 {
+    
+    .background-container {
+      background-image: radial-gradient(
+        $gradient-radius, 
+        rgba(58, 25, 56, 0.9), 
+        black), 
+        $background-image-item ;
+    }
+  }
+}

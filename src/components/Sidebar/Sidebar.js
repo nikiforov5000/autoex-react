@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import SideItem from '../SideItem/SideItem';
 
 
 const Sidebar = () => {
@@ -16,6 +17,8 @@ const Sidebar = () => {
       </svg>
       <div class="wrapper">
         <div class="item-list">
+
+          <SideItem color="orange" title="TITLE" text="texttexttext" button="BUTTON" buttonColor="orange" />
 
           <div class="item item-1">
             <div class="background-container hover-element">
@@ -47,7 +50,7 @@ const Sidebar = () => {
         </div>
 
       </div>
-    </div>
+    </div >
 
   );
 };

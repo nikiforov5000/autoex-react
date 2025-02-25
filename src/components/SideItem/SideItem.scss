@@ -1,10 +1,18 @@
+$background-image-item: url('/public/images/banner-bg-texture-bw.jpg');
+$gradient-radius: 410px; 
+
+$color-green: rgba(15,128, 124, 0.9);
+$color-violet: rgba(58, 25, 56, 0.9);
+$color-orange: rgba(224,103, 30, 0.9);
+
 .item {
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease;
   margin-bottom: 55px;
   
-  .background-container {
+  .item-background-container {
+    width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -17,37 +25,32 @@
     margin-bottom: 10px;
   }
   
-  $background-image-item: url('/public/images/banner-bg-texture-bw.jpg');
-  $gradient-radius: 410px; 
-  
-  &.item-1 {
-    
-    .background-container {
+
+  &.item-orange {
+    .item-background-container {
       background-image: radial-gradient(
         $gradient-radius, 
-        rgba(224,103, 30, 0.9), 
+        $color-orange, 
         black), 
         $background-image-item ;
     }
   }
   
-  &.item-2 {
-    
-    .background-container {
+  &.item-green {
+    .item-background-container {
       background-image: radial-gradient(
         $gradient-radius, 
-        rgba(15,128, 124, 0.9), 
+        $color-green, 
         black), 
         $background-image-item;
     }
   }
 
-  &.item-3 {
-    
-    .background-container {
+  &.item-violet {
+    .item-background-container {
       background-image: radial-gradient(
         $gradient-radius, 
-        rgba(58, 25, 56, 0.9), 
+        $color-violet, 
         black), 
         $background-image-item ;
     }

@@ -18,40 +18,16 @@ const Sidebar = () => {
       <div class="wrapper">
         <div class="item-list">
 
-          <SideItem color="orange" title="TITLE" text="texttexttext" button="BUTTON" buttonColor="orange" />
+          <SideItem color="orange" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" button="BUTTON" />
+          <SideItem color="green" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext"  />
+          <SideItem color="violet" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext"  />
 
-          <div class="item item-1">
-            <div class="background-container hover-element">
-
-              <h3 class="text-center text-white">Jlkkll kjjl gkjhllkjj</h3>
-              <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing </p>
-            </div>
-            <p class="description text-center text-black">Lhjghgj jh hgjhgh ghjghg hjjhgj</p>
-            <a href="#" class="button button-orange">Button</a>
-          </div>
-          <div class="item item-2">
-            <div class="background-container hover-element">
-
-              <h3 class="text-center text-white">Jlkkll kjjl gkjhllkjj</h3>
-              <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing </p>
-            </div>
-            <p class="description text-center text-black">Lhjghgj jh hgjhgh ghjghg hjjhgj</p>
-          </div>
-          <div class="item item-3">
-            <div class="background-container hover-element">
-
-              <h3 class="text-center text-white">Jlkkll kjjl gkjhllkjj</h3>
-              <p class="text-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing </p>
-            </div>
-            <p class="description text-center text-black">Lhjghgj jh hgjhgh ghjghg hjjhgj</p>
-          </div>
           <a href="#" class="button button-purple button-full-width">Button</a>
 
         </div>
 
       </div>
     </div >
-
   );
 };
 

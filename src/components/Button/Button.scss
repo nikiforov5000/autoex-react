@@ -1,44 +1,39 @@
-
-
-
 .button-container {
-    background-color: red;
     margin-top: 18px;
     margin-bottom: 18px;
-}
-
+} 
 
 
 .button {
-    margin: 0px auto 30px 0;
-    padding: 3px 30px;
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-family: $font-family-normal;
-    font-weight: 700;
-    border-radius: 3px;
-    background-color: aqua;
-    box-shadow: 
-    (0px 7px 15px #00000035), 
-    ;
-    
+  margin: 0px auto 30px 0;
+  padding: 3px 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  // font-family: $font-family-normal;
+  font-weight: 700;
+  border-radius: 3px;
+  background-color: aqua;
+  box-shadow: 
+  (0px 7px 15px #00000035), 
+  ;
+  
 
-    &.button-purple {
+  &.button-purple {
     background-image: linear-gradient(to right, #e53e83, #db3e99);
-    }
+  }
 
-    &.button-orange {
+  &.button-orange {
     background-color: #e46828;
-    }
+  }
 
-    &.button-full-width {
+  &.button-wide {
     display: flex;
     justify-content: center;
-    }
+  }
 
-    &.button-green {
+  &.button-green {
     background-color: #079aa5;
-    }
+  }
 }

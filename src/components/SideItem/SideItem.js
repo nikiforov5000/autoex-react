@@ -13,13 +13,9 @@ const SideItem = ({ color, title, text, description, button, buttonColor }) => {
         <p className="text-center text-white">{text}</p>
       </div>
       <p className="description text-center text-black">{description}</p>
-      <div className="button-container">
-            <a href="" className={`button button-${color} button-${100}`}>{text}</a>
-        </div>
-      {/* {
-        button &&
-        <Button color={color} link="#" width="normal" text="new button"/>
-      } */}
+      {button &&
+        <Button color={color} link="#" width="normal" text="new button" />
+      }
     </div>
   );
 };

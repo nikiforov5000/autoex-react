@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../Button/Button';
 import './Banner.css';
 
 const Banner = () => {
@@ -15,7 +16,7 @@ const Banner = () => {
           <p class="text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, aliquam! Fugit amet eos unde, odio nihil inventore rerum in quo, possimus eligendi consequuntur! Et modi architecue, aspernatur temporibus, harum delectus nisi inventore nihil suscipit alias quae? A magnam ut eum! Lorem ipsum dolor sit amet consectetur as fuga animi ipsa nemo.
           </p>
-          <div class="button-container"><a href="#" class="button button-purple">Button</a></div>
+          <Button color="purple" link="#" width="normal" text="new button" />
         </div>
         <div class="right">
           <div class="image-container girl"><img src="/images/banner-woman.jpg" alt="Pink-purple photo of a girl" /></div>

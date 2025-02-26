@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './LowerPart.css';
-import middlewareWrapper from 'cors';
-
+import Button from '../Button/Button';
 
 const LowerPart = () => {
 
@@ -13,7 +12,7 @@ const LowerPart = () => {
             <h2>Motion</h2>
             <p class="description">Lorem ipsum dolor</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro assumenda accusamus et, cumque, iusto, eligendi praesentium esse atque laudantium odio ex mollitia. Eos soluta neque quisquam aperiam, quia obcaecati?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda illo fugit accusamus dolores voluptate minima mollitia deleniti unde non explicabo atque commodi asperiores vero, consequuntur totam blanditiis culpa nihil ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe explicabo consectetur sint? Numquam temporibus corrupti eos sed possimus eligendi similique, exercitationem, repellat itaque neque quo voluptatum tempora explicabo error in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia officiis veniam modi nisi aut ipsa asperiores, nemo sunt maiores facere molestiae ipsam, quae, vero illum veritatis exercitationem facilis sapiente distinctio.</p>
-            <div class="button-container"><a href="#" class="button button-green">Button</a></div>
+            <Button color="green" link="#" width="normal" text="new button" />
           </div>
         </div>
         <div class="col col-5">
@@ -22,7 +21,7 @@ const LowerPart = () => {
             <p class="description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
-            <div class="button-container"><a href="#" class="button button-orange">Button</a></div>
+            <Button color="orange" link="#" text="new button" />
           </div>
         </div>
 

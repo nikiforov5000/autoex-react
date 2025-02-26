@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
 import SideItem from '../SideItem/SideItem';
+import Button from '../Button/Button';
 
 
 const Sidebar = () => {
@@ -19,10 +20,10 @@ const Sidebar = () => {
         <div class="item-list">
 
           <SideItem color="orange" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" button="BUTTON" />
-          <SideItem color="green" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext"  />
-          <SideItem color="violet" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext"  />
+          <SideItem color="green" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="violet" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
 
-          <a href="#" class="button button-purple button-full-width">Button</a>
+          <Button color="green" link="#" width="normal" text="new button" width="wide" />
 
         </div>
 

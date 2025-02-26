@@ -20,7 +20,6 @@
         align-items: center;
 
         .navbar-item {
-          // font-family: $font-family-normal;
           margin-right: 20px;
 
           a {
@@ -28,7 +27,7 @@
             color: white;
 
             img {
-              width: 35px;
+              height: 35px;
             }
           }
         }

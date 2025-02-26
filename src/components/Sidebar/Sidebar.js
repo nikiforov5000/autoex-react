@@ -18,10 +18,12 @@ const Sidebar = () => {
       </svg>
       <div class="wrapper">
         <div class="item-list">
-
-          <SideItem color="orange" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" button="BUTTON" />
-          <SideItem color="green" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-          <SideItem color="violet" title="TITLE" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="orange" title="2D & 3D" description="" text="Производство 2D и 3D графики" button="BUTTON" />
+          <SideItem color="green" title="Адаптация видео" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="violet" title="Адаптация видео для соцсетей" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="violet" title="Разработка сайтов и лендингов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="violet" title="Адаптация видеороликов лекарственных препаратов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
+          <SideItem color="violet" title="Производство аудиороликов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
 
           <Button color="green" link="#" width="normal" text="new button" width="wide" />
 

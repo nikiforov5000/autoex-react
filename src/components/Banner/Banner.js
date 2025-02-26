@@ -9,12 +9,15 @@ const Banner = () => {
       <div class="wrapper">
         <div class="left">
           <div class="">
-            <h3 class="text-white">Motion Studio</h3>
-            <h2 class="text-white">Post Production</h2>
-            <h1 class="text-white">Studio</h1>
+            <h3 class="text-white">Production Studio</h3>
+            <h1 class="text-white">Autoex</h1>
           </div>
           <p class="text-white">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, aliquam! Fugit amet eos unde, odio nihil inventore rerum in quo, possimus eligendi consequuntur! Et modi architecue, aspernatur temporibus, harum delectus nisi inventore nihil suscipit alias quae? A magnam ut eum! Lorem ipsum dolor sit amet consectetur as fuga animi ipsa nemo.
+            Мы создаем рекламный контент, который привлекает внимание и работает на результат. С 2010 года мы помогаем брендам выделяться, адаптируя визуальные и аудиоматериалы под любые задачи.
+          </p>
+          <p class="text-white">
+            <br />
+            Мы работаем с крупными рекламными агентствами (MacCann Kazakhstan, SEED, MegaMedia и др.) на протяжении многих лет, что подтверждает качество наших услуг. Мы знаем, что сроки работы часто горящие, и мы делаем все возможное, чтобы уложиться в них.
           </p>
           <Button color="purple" link="#" width="normal" text="new button" />
         </div>

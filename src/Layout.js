@@ -4,15 +4,19 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import Sidebar from './components/Sidebar/Sidebar';
 import LowerPart from './components/LowerPart/LowerPart';
+import servicesData from './data/services.json';
 import middlewareWrapper from 'cors';
 
 
 const Layout = () => {
 
-  const [selectedService, setSelectedService] = useState('About Us');
+  const [selectedService, setSelectedService] = useState(servicesData.services.audio);
 
-  const handleServiceSelect = (service) => {
-    setSelectedService(service);
+  const handleServiceSelect = (serviceKey) => {
+    const service = servicesData.services[serviceKey];
+    if (service) {
+      setSelectedService(service);
+    }
   };
 
   return (
@@ -23,15 +27,14 @@ const Layout = () => {
         </header>
 
         <div className='section section-content'>
-
           <div className='wrapper'>
             <main className='col col-9 col-wrapper left-side'>
-              <Banner />
+              <Banner service={selectedService} />
               <LowerPart />
             </main>
 
             <aside className='col col-3 right-side'>
-              <Sidebar />
+              <Sidebar onServiceSelect={handleServiceSelect} />
             </aside>
 
             <footer className='footer'>

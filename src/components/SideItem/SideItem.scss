@@ -6,26 +6,29 @@ $color-violet: rgba(58, 25, 56, 0.9);
 $color-orange: rgba(224,103, 30, 0.9);
 
 .item {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease;
-  margin-bottom: 55px;
+  margin-bottom: 12px;
+  width: 100%;
   
   .item-background-container {
-    width: 100%;
+
+    border-radius: 3px;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 170px;
-    padding: 0 30px;
+    height: auto;
+    padding: 10px 10px;
     margin-bottom: 12px;
-  }
-  
-  .description {
-    margin-bottom: 10px;
-  }
-  
 
+    h4 {
+      font-size: 14px;
+      text-align: start;
+    }
+  }
+  
   &.item-orange {
     .item-background-container {
       background-image: radial-gradient(

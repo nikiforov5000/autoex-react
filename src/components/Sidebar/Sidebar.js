@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import './Sidebar.css';
 import SideItem from '../SideItem/SideItem';
 import Button from '../Button/Button';
+import servicesData from '../../data/services.json';
 
 
-const Sidebar = () => {
+const Sidebar = ({ onServiceSelect }) => {
+
+  const services = servicesData.services;
 
   return (
     <div class="right-side">
-      <div class="corner"></div>
+      {/* <div class="corner"></div> */}
       <svg width="0" height="0">
         <defs>
           <clipPath id="noise">
@@ -18,14 +21,12 @@ const Sidebar = () => {
       </svg>
       <div class="wrapper">
         <div class="item-list">
-          <SideItem color="orange" title="2D & 3D" description="" text="Производство 2D и 3D графики" button="BUTTON" />
-          <SideItem color="green" title="Адаптация видео" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-          <SideItem color="violet" title="Адаптация видео для соцсетей" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-          <SideItem color="violet" title="Разработка сайтов и лендингов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-          <SideItem color="violet" title="Адаптация видеороликов лекарственных препаратов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-          <SideItem color="violet" title="Производство аудиороликов" description="Lhjghgj jh hgjhgh ghjghg hjjhgj" text="texttexttext" />
-
-          <Button color="green" link="#" width="normal" text="new button" width="wide" />
+          {Object.entries(services).map(([key, service]) => (
+            <SideItem
+              service={service}
+              onClick={() => onServiceSelect(key)}
+            />
+          ))}
 
         </div>
 

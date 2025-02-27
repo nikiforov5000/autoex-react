@@ -3,19 +3,13 @@ import './SideItem.css';
 import Button from '../Button/Button';
 
 
-const SideItem = ({ color, title, text, description, button, buttonColor }) => {
+const SideItem = ({ service, onClick }) => {
 
   return (
-    <div className={`item item-${color}`} >
-      <div className="item-background-container hover-element">
-
-        <h3 className="text-center text-white">{title}</h3>
-        <p className="text-center text-white">{text}</p>
+    <div onClick={onClick} className={`item item-orange`} >
+      <div className="item-background-container">
+        <h4 className="text-center text-white">{service.title}</h4>
       </div>
-      <p className="description text-center text-black">{description}</p>
-      {button &&
-        <Button color={color} link="#" width="normal" text="new button" />
-      }
     </div>
   );
 };

@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from '../Button/Button';
 import './Banner.css';
+import servicesData from '../../data/services.json';
 
-const Banner = () => {
+const Banner = ({ service }) => {
+
 
   return (
     <div class="col col-12 background-container">
       <div class="wrapper">
         <div class="left">
           <div class="">
-            <h3 class="text-white">Production Studio</h3>
-            <h1 class="text-white">Autoex</h1>
+            <h3 class="text-white">{service.title}</h3>
           </div>
           <p class="text-white">
-            Мы создаем рекламный контент, который привлекает внимание и работает на результат. С 2010 года мы помогаем брендам выделяться, адаптируя визуальные и аудиоматериалы под любые задачи.
+            {service.description}
           </p>
-          <p class="text-white">
-            <br />
-            Мы работаем с крупными рекламными агентствами (MacCann Kazakhstan, SEED, MegaMedia и др.) на протяжении многих лет, что подтверждает качество наших услуг. Мы знаем, что сроки работы часто горящие, и мы делаем все возможное, чтобы уложиться в них.
-          </p>
-          <Button color="purple" link="#" width="normal" text="new button" />
         </div>
         <div class="right">
           <div class="image-container girl"><img src="/images/banner-woman.jpg" alt="Pink-purple photo of a girl" /></div>

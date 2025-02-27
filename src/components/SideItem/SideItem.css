@@ -1,20 +1,23 @@
 .item {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease;
-  margin-bottom: 55px;
+  margin-bottom: 12px;
+  width: 100%;
 }
 .item .item-background-container {
-  width: 100%;
+  border-radius: 3px;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 170px;
-  padding: 0 30px;
+  height: auto;
+  padding: 10px 10px;
   margin-bottom: 12px;
 }
-.item .description {
-  margin-bottom: 10px;
+.item .item-background-container h4 {
+  font-size: 14px;
+  text-align: start;
 }
 .item.item-orange .item-background-container {
   background-image: radial-gradient(410px, rgba(224, 103, 30, 0.9), black), url("/public/images/banner-bg-texture-bw.jpg");

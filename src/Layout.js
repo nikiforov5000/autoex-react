@@ -9,6 +9,12 @@ import middlewareWrapper from 'cors';
 
 const Layout = () => {
 
+  const [selectedService, setSelectedService] = useState('About Us');
+
+  const handleServiceSelect = (service) => {
+    setSelectedService(service);
+  };
+
   return (
     <div className="main-wrap">
       <div id="page-wrapper">

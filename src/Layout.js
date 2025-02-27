@@ -4,6 +4,8 @@ import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner/Banner';
 import Sidebar from './components/Sidebar/Sidebar';
 import LowerPart from './components/LowerPart/LowerPart';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
 import servicesData from './data/services.json';
 import middlewareWrapper from 'cors';
 
@@ -36,11 +38,16 @@ const Layout = () => {
             <aside className='col col-3 right-side'>
               <Sidebar onServiceSelect={handleServiceSelect} />
             </aside>
-
-            <footer className='footer'>
-            </footer>
           </div>
         </div>
+
+        <about className='section section-about'>
+          <About />
+        </about>
+
+        <footer className='section section-footer'>
+          <Footer />
+        </footer>
       </div>
     </div>
 

@@ -1,0 +1,10 @@
+@import '../../colors';
+
+.about {
+    background-color: $color-violet;
+    padding: 0 50px 0 100px;
+
+    h2, p {
+        color: white;
+    }
+}

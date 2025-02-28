@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './Sidebar.css';
+import './Services.css';
 import SideItem from '../SideItem/SideItem';
 import Button from '../Button/Button';
 import servicesData from '../../data/services.json';
 
 
-const Sidebar = ({ onServiceSelect }) => {
+const Services = ({ onServiceSelect }) => {
 
   const services = servicesData.services;
 
@@ -35,4 +35,4 @@ const Sidebar = ({ onServiceSelect }) => {
   );
 };
 
-export default Sidebar;
+export default Services;

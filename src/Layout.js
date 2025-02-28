@@ -27,27 +27,21 @@ const Layout = () => {
         <header className='section section-navbar'>
           <Navbar />
         </header>
-
-        <div className='section section-content'>
-          <div className='wrapper'>
-            <main className='col col-9 col-wrapper left-side'>
-              <Banner service={selectedService} />
-              <LowerPart />
-            </main>
-
-            <aside className='col col-3 right-side'>
-              <Sidebar onServiceSelect={handleServiceSelect} />
-            </aside>
-          </div>
-        </div>
-
+        <main className='section section-banner'>
+          <Banner service={selectedService} />
+          <Sidebar onServiceSelect={handleServiceSelect} />
+        </main>
         <about className='section section-about'>
           <About />
         </about>
+        <contact>
+          <Contact />
+        </contact>
 
         <footer className='section section-footer'>
           <Footer />
         </footer>
+
       </div>
     </div>
 

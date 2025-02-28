@@ -28,8 +28,8 @@ const Layout = () => {
       {/* 
       <Services onServiceSelect={handleServiceSelect} />
       <Contact />
-      <Footer /> 
       */}
+      <Footer />
     </div>
 
   );

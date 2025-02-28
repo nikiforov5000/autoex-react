@@ -24,10 +24,12 @@ const Layout = () => {
   return (
     <div className="main-wrap">
       <Navbar />
+      {/* 
       <Banner service={selectedService} />
       <Services onServiceSelect={handleServiceSelect} />
       <Contact />
-      <Footer />
+      <Footer /> 
+      */}
     </div>
 
   );

@@ -35,4 +35,33 @@ const Services = ({ onServiceSelect }) => {
   );
 };
 
+// const Banner = ({ service }) => {
+
+
+//   return (
+//     <section class="section section-banner">
+//       <div class="col col-12 background-container">
+//         <div class="wrapper">
+//           <div class="left">
+//             <div class="">
+//               <h3 class="text-white">{service.title}</h3>
+//             </div>
+//             <p class="text-white">
+//               {service.description}
+//             </p>
+//           </div>
+//           <div class="right">
+//             <div class="image-container girl"><img src="/images/banner-woman.jpg" alt="Pink-purple photo of a girl" /></div>
+//             <div class="background-container">
+//               <h3 class="text-white text-center">some <br /> thing</h3>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Banner;
+
 export default Services;

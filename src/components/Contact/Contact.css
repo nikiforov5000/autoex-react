@@ -1,1 +1,7 @@
-/*# sourceMappingURL=Contact.css.map */
+.section.section-contact {
+  height: 300px;
+  background-color: beige;
+}
+.section.section-contact .wrapper {
+  width: 100%;
+}/*# sourceMappingURL=Contact.css.map */

@@ -27,8 +27,8 @@ const Layout = () => {
       <Banner service={selectedService} />
       {/* 
       <Services onServiceSelect={handleServiceSelect} />
-      <Contact />
       */}
+      <Contact />
       <Footer />
     </div>
 

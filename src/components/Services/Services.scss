@@ -4,11 +4,19 @@
     background-color: antiquewhite;
 
     .wrapper {
+      background-color: grey;
       width: 100%;
-      padding: 48px 0 0 48px;
+      padding: 0 48px;
+      flex-flow: column;
       
       .item-list {
-        width: 210px;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+      }
+
+      .service-description {
+        display: flex;
       }
     }
   }

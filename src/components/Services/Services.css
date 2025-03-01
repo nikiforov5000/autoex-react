@@ -2,9 +2,16 @@
   background-color: antiquewhite;
 }
 .section.section-services .wrapper {
+  background-color: grey;
   width: 100%;
-  padding: 48px 0 0 48px;
+  padding: 0 48px;
+  flex-flow: column;
 }
 .section.section-services .wrapper .item-list {
-  width: 210px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+.section.section-services .wrapper .service-description {
+  display: flex;
 }/*# sourceMappingURL=Services.css.map */

@@ -9,6 +9,15 @@ const Services = ({ onServiceSelect }) => {
 
   const services = servicesData.services;
 
+  const [selectedService, setSelectedService] = useState(servicesData.services.audio);
+  
+  const handleServiceSelect = (serviceKey) => {
+    const service = servicesData.services[serviceKey];
+    if (service) {
+      setSelectedService(service);
+    }
+  };
+
   return (
 
     <section class="section section-services">
@@ -16,49 +25,33 @@ const Services = ({ onServiceSelect }) => {
         <div class="item-list">
           {Object.entries(services).map(([key, service]) => (
             <SideItem
+              key={key}
               service={service}
-              onClick={() => onServiceSelect(key)}
+              onClick={() => handleServiceSelect(key)}
             />
           ))}
         </div>
-        <div className="display">
+        <div className="service-description">
+          <ServiceDetails service={selectedService}/>
           <img src="/images/service-display-placeholder.png" alt="placeholder" className="placeholder" />
-        </div>
-        <div className="about-service">
-          { }
         </div>
       </div>
     </section>
   );
 };
 
-// const Banner = ({ service }) => {
 
-
-//   return (
-//     <section class="section section-banner">
-//       <div class="col col-12 background-container">
-//         <div class="wrapper">
-//           <div class="left">
-//             <div class="">
-//               <h3 class="text-white">{service.title}</h3>
-//             </div>
-//             <p class="text-white">
-//               {service.description}
-//             </p>
-//           </div>
-//           <div class="right">
-//             <div class="image-container girl"><img src="/images/banner-woman.jpg" alt="Pink-purple photo of a girl" /></div>
-//             <div class="background-container">
-//               <h3 class="text-white text-center">some <br /> thing</h3>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Banner;
+const ServiceDetails = ({ service }) => {
+  return (
+    <div class="left">
+      <div class="">
+        <h3 class="text-white">{service.title}</h3>
+      </div>
+      <p class="text-white">
+        {service.description}
+      </p>
+    </div>
+  );
+};
 
 export default Services;

@@ -1,5 +1,6 @@
 .section.section-services {
   background-color: antiquewhite;
+  height: 500px;
 }
 .section.section-services .wrapper {
   background-color: grey;

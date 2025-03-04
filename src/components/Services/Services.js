@@ -10,7 +10,7 @@ const Services = ({ onServiceSelect }) => {
   const services = servicesData.services;
 
   const [selectedService, setSelectedService] = useState(servicesData.services.audio);
-  
+
   const handleServiceSelect = (serviceKey) => {
     const service = servicesData.services[serviceKey];
     if (service) {
@@ -32,7 +32,7 @@ const Services = ({ onServiceSelect }) => {
           ))}
         </div>
         <div className="service-description">
-          <ServiceDetails service={selectedService}/>
+          <ServiceDetails service={selectedService} />
           <img src="/images/service-display-placeholder.png" alt="placeholder" className="placeholder" />
         </div>
       </div>

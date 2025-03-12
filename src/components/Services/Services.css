@@ -1,11 +1,11 @@
 .section.section-services {
-  background-color: antiquewhite;
+  background-color: #15161a;
   height: 500px;
 }
 .section.section-services .wrapper {
-  background-color: grey;
   width: 100%;
-  padding: 0 48px;
+  height: 100%;
+  padding: 0 100px;
   flex-flow: column;
 }
 .section.section-services .wrapper .item-list {
@@ -13,6 +13,55 @@
   display: flex;
   flex-flow: row;
 }
-.section.section-services .wrapper .service-description {
+.section.section-services .wrapper .service-details {
+  margin-top: 82px;
   display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.section.section-services .wrapper .service-details .service-details-text {
+  width: 490px;
+}
+.section.section-services .wrapper .service-details .service-details-text h4 {
+  letter-spacing: 0.7px;
+  margin-bottom: 55px;
+}
+.section.section-services .wrapper .service-details .service-details-text p {
+  line-height: 123%;
+}
+.section.section-services .wrapper .service-details .service-carousel-container {
+  width: 490px;
+}
+.section.section-services .wrapper .service-details .service-carousel-container img {
+  width: 100%;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container .indicators {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container .indicators .indicator {
+  margin-right: 10px;
+  width: 100%;
+  height: 1px;
+  border-top: 2px solid #888684;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container .indicators .indicator:last-child {
+  margin-right: 0;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container .button {
+  height: 19px;
+  margin-left: 30px;
+}
+.section.section-services .wrapper .service-details .service-carousel-container .carousel-controls-container .button img {
+  max-height: 100%;
+  max-width: 100%;
 }/*# sourceMappingURL=Services.css.map */

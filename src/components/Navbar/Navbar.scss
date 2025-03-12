@@ -3,6 +3,7 @@
 .section {
   &.section-navbar {
     position: fixed;
+    height: 100px;
     max-width: $section-width;
     width: 100%;
     top: 0;
@@ -18,23 +19,26 @@
       justify-content: space-between;
 
       width: 100%;
-      padding: 28px $section-padding 28px $section-padding;
+      padding: 18px $section-padding 0;
 
+      .logo-container {
+        margin-top: 2px;
+        height: 44px;
+        box-shadow: 0 5px 5px rgba($color: #000000, $alpha: 0.2);
+      }
       .navbar-list {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
 
         .navbar-item {
-          margin-right: 20px;
+          margin-right: 0;
+          margin-bottom: 11px ;
 
           a {
             text-decoration: none;
             color: $color-gray-4;
 
-            img {
-              height: 44px;
-            }
           }
         }
       }

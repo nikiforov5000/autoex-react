@@ -7,10 +7,9 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className="section section-contact">
-      <div className="wrapper">
-        <div className="col col-4"><About /></div>
-        <div className="col col-4"><ContactForm /></div>
-        <div className="col col-4"><ContactsList /></div>
+      <div class="wrapper">
+        <div className="col col-6"><About /></div>
+        <div className="col col-6"><ContactForm /></div>
       </div>
     </div>
   );

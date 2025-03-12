@@ -1,61 +1,14 @@
-$background-image-item: url('/public/images/banner-bg-texture-bw.jpg');
-$gradient-radius: 410px; 
-
-$color-green: rgba(15,128, 124, 0.9);
-$color-violet: rgba(58, 25, 56, 0.9);
-$color-orange: rgba(224,103, 30, 0.9);
+@import '../../colors';
 
 .item {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  transition: transform 0.3s ease;
-  margin-bottom: 12px;
-  width: 100%;
+  margin-top: 14px;
+  margin-right: 10px;
   
-  .item-background-container {
-
-    border-radius: 3px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    height: auto;
-    padding: 10px 10px;
-    margin-bottom: 12px;
-
-    h4 {
-      font-size: 14px;
-      text-align: start;
-    }
+  p {
+    color: $color-gray-4;
   }
   
-  &.item-orange {
-    .item-background-container {
-      background-image: radial-gradient(
-        $gradient-radius, 
-        $color-orange, 
-        black), 
-        $background-image-item ;
-    }
-  }
-  
-  &.item-green {
-    .item-background-container {
-      background-image: radial-gradient(
-        $gradient-radius, 
-        $color-green, 
-        black), 
-        $background-image-item;
-    }
-  }
-
-  &.item-violet {
-    .item-background-container {
-      background-image: radial-gradient(
-        $gradient-radius, 
-        $color-violet, 
-        black), 
-        $background-image-item ;
-    }
+  &:last-child {
+    margin-right: 0;
   }
 }

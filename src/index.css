@@ -42,7 +42,7 @@ body {
   font-weight: 200;
 }
 .main-wrap h4 {
-  font-size: 18px;
+  font-size: 28px;
 }
 .main-wrap p {
   font-size: 18px;
@@ -66,6 +66,8 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
+  letter-spacing: 0.1px;
 }
 .main-wrap h1,
 .main-wrap h2,
@@ -74,6 +76,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 130%;
+  letter-spacing: 2px;
 }
 .main-wrap h3 {
   font-weight: 200;

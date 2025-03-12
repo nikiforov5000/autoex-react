@@ -1,13 +1,9 @@
+@import '../../colors';
 .section {
 
   &.section-contact {
-    height: 300px;
-    background-color: beige;
-    .wrapper {
-      width: 100%;
-
-      
-
-    }
+    width: 1280px;
+    display: flex;
+    flex-flow: row;
   }
 }

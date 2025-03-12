@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Services.css';
 import SideItem from '../SideItem/SideItem';
-import Button from '../Button/Button';
 import servicesData from '../../data/services.json';
 
 
@@ -20,9 +19,9 @@ const Services = ({ onServiceSelect }) => {
 
   return (
 
-    <section class="section section-services">
-      <div class="wrapper">
-        <div class="item-list">
+    <section className="section section-services">
+      <div className="wrapper">
+        <div className="item-list">
           {Object.entries(services).map(([key, service]) => (
             <SideItem
               key={key}
@@ -31,11 +30,8 @@ const Services = ({ onServiceSelect }) => {
             />
           ))}
         </div>
-        <div className="service-description">
-          <ServiceDetails service={selectedService} />
-          <img src="/images/service-display-placeholder.png" alt="placeholder" className="placeholder" />
+        <ServiceDetails service={selectedService} />
         </div>
-      </div>
     </section>
   );
 };
@@ -43,13 +39,32 @@ const Services = ({ onServiceSelect }) => {
 
 const ServiceDetails = ({ service }) => {
   return (
-    <div class="left">
-      <div class="">
-        <h3 class="text-white">{service.title}</h3>
+    <div className="service-details">
+      <div className='service-details-text'>
+        <h4 className="text-white">{service.title}</h4>
+        <p className="text-white">
+          {service.description}
+        </p>
       </div>
-      <p class="text-white">
-        {service.description}
-      </p>
+      <div className='service-carousel-container'>
+        <div className="carousel">
+          <img src="/images/service-display-placeholder.png" alt="placeholder" className="placeholder" />
+        </div>
+        <div className='carousel-controls-container'>
+          <div className="indicators">
+            <div className="indicator"></div>
+            <div className="indicator"></div>
+            <div className="indicator"></div>
+            <div className="indicator"></div>
+          </div>
+          <div className="button prev">
+            <img src="/images/arrow-prev.png" alt="placeholder" className="placeholder" />
+          </div>
+          <div className="button next">
+            <img src="/images/arrow-next.png" alt="placeholder" className="placeholder" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

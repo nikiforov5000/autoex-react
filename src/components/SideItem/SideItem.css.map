@@ -1,1 +1,1 @@
-{"version":3,"sources":["SideItem.scss","SideItem.css"],"names":[],"mappings":"AAOA;EACE,eAAA;EACA,kBAAA;EACA,qBAAA;EACA,+BAAA;EACA,mBAAA;EACA,WAAA;ACNF;ADQE;EAEE,kBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,mBAAA;ACPJ;ADSI;EACE,eAAA;EACA,iBAAA;ACPN;ADYI;EACE,wHAAA;ACVN;ADmBI;EACE,wHAAA;ACjBN;AD0BI;EACE,sHAAA;ACxBN","file":"SideItem.css"}
+{"version":3,"sources":["SideItem.scss","SideItem.css","../../_colors.scss"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,kBAAA;ACDF;ADGE;EACE,cEGW;ADJf;ADIE;EACE,eAAA;ACFJ","file":"SideItem.css"}

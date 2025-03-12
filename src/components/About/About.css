@@ -1,7 +1,6 @@
 .about {
-  background-color: rgba(58, 25, 56, 0.9);
-  padding: 0 50px 0 100px;
+  background-color: #2b3034;
 }
-.about h2, .about p {
-  color: white;
+.about .wrapper {
+  display: flex;
 }/*# sourceMappingURL=About.css.map */

@@ -1,14 +1,31 @@
-.section {
+@import "../../colors";
 
+.section {
   &.section-banner {
-    height: 599px;
-    
+    margin-top: 104px;
+    height: 497px;
+    position: relative;
+    background-image: url("../../../public/images/banner-bg-ball.png");
+
     .wrapper {
       width: 100%;
       display: flex;
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      z-index: 2;
+      p {
+        color: $color-orange;
+      }
     }
+  }
+  &.section-banner::after {
+    background-color: #15161ae0;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }

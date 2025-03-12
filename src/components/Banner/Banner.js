@@ -5,8 +5,9 @@ const Banner = () => {
   return (
     <section class="section section-banner">
       <div className="wrapper">
-        <h3 className='text-center'>production studio</h3>
-        <h1 className='text-center'>autoex</h1>
+        <h1 className='text-center text-white'>Autoex</h1>
+        <h3 className='text-center text-white'>Production Studio</h3>
+        <p className='text-center'>since 2010</p>
       </div>
     </section>
   );

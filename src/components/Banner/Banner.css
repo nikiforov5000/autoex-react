@@ -1,5 +1,8 @@
 .section.section-banner {
-  height: 599px;
+  margin-top: 104px;
+  height: 497px;
+  position: relative;
+  background-image: url("../../../public/images/banner-bg-ball.png");
 }
 .section.section-banner .wrapper {
   width: 100%;
@@ -7,4 +10,17 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+}
+.section.section-banner .wrapper p {
+  color: #e7732e;
+}
+.section.section-banner::after {
+  background-color: rgba(21, 22, 26, 0.8784313725);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }/*# sourceMappingURL=Banner.css.map */

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   padding: 0;
   margin: 0;
@@ -30,24 +30,28 @@ body {
   z-index: 1999;
   overflow: hidden;
   background-color: #242424;
-  @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 }
 .main-wrap h1 {
-  font-size: 68px;
+  font-size: 52px;
 }
 .main-wrap h2 {
   font-size: 36px;
 }
 .main-wrap h3 {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 200;
 }
 .main-wrap h4 {
   font-size: 18px;
 }
 .main-wrap p {
-  font-size: 14px;
+  font-size: 18px;
 }
-.main-wrap h1, .main-wrap h2, .main-wrap h3, .main-wrap h4, .main-wrap p {
+.main-wrap h1,
+.main-wrap h2,
+.main-wrap h3,
+.main-wrap h4,
+.main-wrap p {
   line-height: 130%;
 }
 .main-wrap .text-center {
@@ -57,15 +61,22 @@ body {
 .main-wrap .box-shadow {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
 }
-.main-wrap p, .main-wrap a {
-  font-family: "PT Sans", sans-serif;
+.main-wrap p,
+.main-wrap a {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.main-wrap h1, .main-wrap h2, .main-wrap h3, .main-wrap h4 {
-  font-family: "PT Sans", sans-serif;
+.main-wrap h1,
+.main-wrap h2,
+.main-wrap h3,
+.main-wrap h4 {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 130%;
+}
+.main-wrap h3 {
+  font-weight: 200;
 }
 .main-wrap .text-white {
   color: white;

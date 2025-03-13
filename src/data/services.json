@@ -1,44 +1,34 @@
 {
   "services": {
     "graphics": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Производство 2D и 3D графики",
       "description": "Мы создаем промо-ролики, рекламные и корпоративные материалы, анимацию для брендов и продуктов. Наша команда использует современные технологии для визуально привлекательного и профессионального результата."
     },
     "localization": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Адаптация видео",
       "description": "Мы адаптируем видео любой сложности: монтаж, титрование, изменений продуктов для нужных рынков, добавдление графики и удаление элементов. Адаптируем ролики под различные рынки: Казахстан, Узбекистан, Азербайджан, Грузию, Монголию."
     },
     "socials": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Адаптация видео для соцсетей",
       "description": "Создаем версии видеоконтента для Instagram, TikTok и других площадок с учетом технических требований: кадрирование, монтаж, адаптация титров и графики."
     },
     "dev": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Разработка сайтов и лендингов",
       "description": "Наше новое направление – создание сайтов и лендингов для бизнеса. Разрабатываем удобные, адаптивные решения, которые помогают брендам взаимодействовать с аудиторией и продавать эффективнее."
     },
     "pharma": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Адаптация видеороликов лекарственных препаратов",
       "description": "Адаптация медицинских роликов имеет свои нюансы. Чтобы ролик был принят НЦЛЭС, процесс утверждения может занять несколько месяцев и потребовать нескольких раундов правок. Для экономии бюджета мы сначала делаем драфтовое озвучивание (непрофессиональным диктором), а финальное – только после утверждения ролика."
     },
     "audio": {
+      "media": ["/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png", "/images/service-display-placeholder.png"],
       "title": "Производство аудиороликов",
       "description": "Мы предлагаем большой выбор дикторов на разных языках: русский, казахский, азербайджанский, узбекский, монгольский, грузинский. Также у нас есть детские голоса и певцы для роликов с вокалом. Мы создаем оригинальную музыку или выкупаем лицензированные композиции со стоков."
     }
   }
 }
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-
-
-

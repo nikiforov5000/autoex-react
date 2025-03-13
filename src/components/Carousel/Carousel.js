@@ -1,15 +1,10 @@
 import { useState } from "react";
 import './Carousel.css'
 
-const images = [
-  "/images/service-display-placeholder.png",
-  "/images/service-display-placeholder.png",
-  "/images/service-display-placeholder.png",
-  "/images/service-display-placeholder.png",
-  "/images/service-display-placeholder.png",
-];
 
 const Carousel = ({ service }) => {
+  const images = service.media;
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {

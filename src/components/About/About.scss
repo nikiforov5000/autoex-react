@@ -1,10 +1,21 @@
-@import '../../colors';
+@import "../../colors";
 
 .about {
-  background-color: $color-gray-2;
+  background-color: $color-gray-5;
+  height: 100%;
 
   .wrapper {
     display: flex;
-    
+    flex-flow: column;
+    padding: 52px 50px 52px $section-padding;
+
+    h4 {
+      letter-spacing: 0.6px;
+      margin-bottom: 75px;
+    }
+
+    p {
+      line-height: 122%;
+    }
   }
 }

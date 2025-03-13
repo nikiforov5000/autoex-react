@@ -1,5 +1,13 @@
+.section.section-footer {
+  background-color: #15161a;
+}
 .section.section-footer .wrapper {
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
+}
+.section.section-footer .wrapper p {
+  margin: auto;
+  color: #4d5154;
 }/*# sourceMappingURL=Footer.css.map */

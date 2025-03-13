@@ -1,11 +1,19 @@
-.section {
+@import "../../colors";
 
+.section {
   &.section-footer {
+    background-color: $color-gray-1;
 
     .wrapper {
       width: 100%;
+      height: 100px;
       display: flex;
       justify-content: center;
+
+      p {
+        margin: auto;
+        color: $color-gray-3;
+      }
     }
   }
 }

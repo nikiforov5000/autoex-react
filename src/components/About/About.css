@@ -1,6 +1,16 @@
 .about {
-  background-color: #2b3034;
+  background-color: #d9d9d9;
+  height: 100%;
 }
 .about .wrapper {
   display: flex;
+  flex-flow: column;
+  padding: 52px 50px 52px 100px;
+}
+.about .wrapper h4 {
+  letter-spacing: 0.6px;
+  margin-bottom: 75px;
+}
+.about .wrapper p {
+  line-height: 122%;
 }/*# sourceMappingURL=About.css.map */

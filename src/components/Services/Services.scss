@@ -1,17 +1,16 @@
-@import '../../colors';
+@import "../../colors";
 
 .section {
-
   &.section-services {
     background-color: $color-gray-1;
-    height: 500px;
+    height: 592px;
 
     .wrapper {
       width: 100%;
       height: 100%;
       padding: 0 $section-padding;
       flex-flow: column;
-      
+
       .item-list {
         width: 100%;
         display: flex;
@@ -29,7 +28,7 @@
           width: 490px;
 
           h4 {
-            letter-spacing: 0.70px;
+            letter-spacing: 0.7px;
             margin-bottom: 55px;
           }
 
@@ -66,10 +65,9 @@
                 &:last-child {
                   margin-right: 0;
                 }
-
               }
             }
-            
+
             .button {
               height: 19px;
               margin-left: 30px;

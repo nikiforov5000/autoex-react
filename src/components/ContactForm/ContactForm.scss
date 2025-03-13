@@ -1,0 +1,49 @@
+@import "../../colors";
+
+.contact-form {
+  background-color: $color-gray-2;
+  height: 100%;
+  width: 100%;
+
+  .wrapper {
+    padding: 52px $section-padding 52px 50px;
+
+    form {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+
+      input,
+      textarea {
+        height: 35px;
+        margin-bottom: 24px;
+        border: none;
+        font-size: 18px;
+        padding-left: 13px;
+        font-family: $font-family-normal;
+        max-width: 475px;
+
+        &.text {
+          height: 85px;
+          max-height: 200px;
+          min-height: 35px;
+          min-width: 475px;
+          position: relative;
+
+          &::placeholder {
+            position: absolute;
+            top: 2px;
+          }
+        }
+      }
+
+      .button {
+        background-color: $color-orange;
+        font-weight: 200;
+        color: white;
+        width: 151px;
+        padding: 0 10px;
+      }
+    }
+  }
+}

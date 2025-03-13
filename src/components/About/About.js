@@ -1,11 +1,11 @@
-import aboutData  from '../../data/about.json';
+import aboutData from '../../data/about.json';
 import './About.css';
 
 const About = () => {
   return (
     <div class="about">
       <div class="wrapper">
-        <h2 className='title'>{aboutData.title}</h2>
+        <h4 className='title'>{aboutData.title}</h4>
         <p className='description'>{aboutData.description}</p>
       </div>
     </div>

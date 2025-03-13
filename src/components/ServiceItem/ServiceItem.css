@@ -1,9 +1,14 @@
 .item {
+  cursor: pointer;
   margin-top: 14px;
   margin-right: 10px;
 }
 .item p {
   color: #888684;
+  transition: color 0.2s;
+}
+.item p:hover {
+  color: white;
 }
 .item:last-child {
   margin-right: 0;

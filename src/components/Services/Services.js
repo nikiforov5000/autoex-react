@@ -27,6 +27,7 @@ const Services = ({ onServiceSelect }) => {
               key={key}
               service={service}
               onClick={() => handleServiceSelect(key)}
+              isSelected={selectedService === services[key]}
             />
           ))}
         </div>

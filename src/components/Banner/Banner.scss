@@ -4,8 +4,40 @@
   &.section-banner {
     margin-top: 95px;
     height: 502px;
+    overflow: hidden;
     position: relative;
-    background-image: url("../../../public/images/banner-bg-ball.png");
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("../../../public/images/banner-bg-ball.jpg");
+      background-position: center;
+      background-size: cover;
+      animation: scaleAnimation 20s linear infinite;
+    }
+
+    &.section-banner::after {
+      background-color: #15161ae5;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    @keyframes scaleAnimation {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
 
     .wrapper {
       display: flex;
@@ -24,14 +56,5 @@
         color: $color-orange;
       }
     }
-  }
-  &.section-banner::after {
-    background-color: #15161ae5;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 }

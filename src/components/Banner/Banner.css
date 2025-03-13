@@ -1,8 +1,36 @@
 .section.section-banner {
   margin-top: 95px;
   height: 502px;
+  overflow: hidden;
   position: relative;
-  background-image: url("../../../public/images/banner-bg-ball.png");
+}
+.section.section-banner .background-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../../public/images/banner-bg-ball.jpg");
+  background-position: center;
+  background-size: cover;
+  animation: scaleAnimation 20s linear infinite;
+}
+.section.section-banner.section-banner::after {
+  background-color: rgba(21, 22, 26, 0.8980392157);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@keyframes scaleAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 .section.section-banner .wrapper {
   display: flex;
@@ -19,13 +47,4 @@
 .section.section-banner .wrapper p {
   margin-top: 19px;
   color: #e7732e;
-}
-.section.section-banner::after {
-  background-color: rgba(21, 22, 26, 0.8980392157);
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }/*# sourceMappingURL=Banner.css.map */

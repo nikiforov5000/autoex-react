@@ -29,6 +29,10 @@
         &:last-child {
           margin-right: 0;
         }
+
+        &.active {
+          border-top: 2px solid white;
+        }
       }
     }
 

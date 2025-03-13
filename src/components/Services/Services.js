@@ -48,7 +48,7 @@ const ServiceDetails = ({ service }) => {
           {service.description}
         </p>
       </div>
-      <Carousel />
+      <Carousel service={service} />
 
     </div>
   );

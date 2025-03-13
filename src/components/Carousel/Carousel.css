@@ -25,6 +25,9 @@
 .service-carousel-container .carousel-controls-container .indicators .indicator:last-child {
   margin-right: 0;
 }
+.service-carousel-container .carousel-controls-container .indicators .indicator.active {
+  border-top: 2px solid white;
+}
 .service-carousel-container .carousel-controls-container button {
   background-color: transparent;
   border: none;

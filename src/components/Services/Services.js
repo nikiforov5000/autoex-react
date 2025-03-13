@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Services.css';
 import ServiceItem from '../ServiceItem/ServiceItem';
+import Carousel from '../Carousel/Carousel'
 import servicesData from '../../data/services.json';
 
 
@@ -47,25 +48,8 @@ const ServiceDetails = ({ service }) => {
           {service.description}
         </p>
       </div>
-      <div className='service-carousel-container'>
-        <div className="carousel">
-          <img src="/images/service-display-placeholder.png" alt="placeholder" className="placeholder" />
-        </div>
-        <div className='carousel-controls-container'>
-          <div className="indicators">
-            <div className="indicator"></div>
-            <div className="indicator"></div>
-            <div className="indicator"></div>
-            <div className="indicator"></div>
-          </div>
-          <div className="button prev">
-            <img src="/images/arrow-prev.png" alt="placeholder" className="placeholder" />
-          </div>
-          <div className="button next">
-            <img src="/images/arrow-next.png" alt="placeholder" className="placeholder" />
-          </div>
-        </div>
-      </div>
+      <Carousel />
+
     </div>
   );
 };

@@ -1,13 +1,13 @@
-@import '../../colors';
+@import "../../colors";
 
 .item {
   margin-top: 14px;
   margin-right: 10px;
-  
+
   p {
     color: $color-gray-4;
   }
-  
+
   &:last-child {
     margin-right: 0;
   }

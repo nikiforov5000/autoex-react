@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Services.css';
-import SideItem from '../SideItem/SideItem';
+import ServiceItem from '../ServiceItem/ServiceItem';
 import servicesData from '../../data/services.json';
 
 
@@ -23,7 +23,7 @@ const Services = ({ onServiceSelect }) => {
       <div className="wrapper">
         <div className="item-list">
           {Object.entries(services).map(([key, service]) => (
-            <SideItem
+            <ServiceItem
               key={key}
               service={service}
               onClick={() => handleServiceSelect(key)}
@@ -31,7 +31,7 @@ const Services = ({ onServiceSelect }) => {
           ))}
         </div>
         <ServiceDetails service={selectedService} />
-        </div>
+      </div>
     </section>
   );
 };

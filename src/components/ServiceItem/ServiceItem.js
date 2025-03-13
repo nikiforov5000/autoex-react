@@ -1,8 +1,8 @@
 import React from 'react';
-import './SideItem.css';
+import './ServiceItem.css';
 
 
-const SideItem = ({ service, onClick }) => {
+const ServiceItem = ({ service, onClick }) => {
 
   return (
     <div onClick={onClick} className={`item`} >
@@ -11,4 +11,4 @@ const SideItem = ({ service, onClick }) => {
   );
 };
 
-export default SideItem;
+export default ServiceItem;

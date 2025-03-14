@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c65df4ab.css",
+    "main.js": "/static/js/main.4566bb76.js",
+    "static/js/453.adb716f4.chunk.js": "/static/js/453.adb716f4.chunk.js",
+    "static/media/banner-bg-ball.jpg": "/static/media/banner-bg-ball.b3463732c1a910ff9951.jpg",
+    "index.html": "/index.html",
+    "main.c65df4ab.css.map": "/static/css/main.c65df4ab.css.map",
+    "main.4566bb76.js.map": "/static/js/main.4566bb76.js.map",
+    "453.adb716f4.chunk.js.map": "/static/js/453.adb716f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c65df4ab.css",
+    "static/js/main.4566bb76.js"
+  ]
+}

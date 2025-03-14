@@ -1,7 +1,7 @@
 {
   "services": {
     "graphics": {
-      "media": ["/images/service-graphics-placeholder.png", "/images/service-graphics-placeholder.png", "/images/service-graphics-placeholder.png", "/images/service-graphics-placeholder.png", "/images/service-graphics-placeholder.png"],
+      "media": ["/images/service-graphics-placeholder.png"],
       "title": "Производство 2D и 3D графики",
       "description": "Мы создаем промо-ролики, рекламные и корпоративные материалы, анимацию для брендов и продуктов. Наша команда использует современные технологии для визуально привлекательного и профессионального результата."
     },

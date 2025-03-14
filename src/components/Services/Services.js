@@ -19,7 +19,6 @@ const Services = ({ onServiceSelect }) => {
   };
 
   return (
-
     <section className="section section-services">
       <div className="wrapper">
         <div className="item-list">

@@ -1,0 +1,36 @@
+@import "../../colors";
+
+.carousel-controls-container {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+
+  .indicators {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .indicator {
+      cursor: pointer;
+      margin-right: 10px;
+      width: 100%;
+      padding: 12px 0;
+
+      .line {
+        border-top: 3px solid $color-gray-2;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        .line {
+          border-top: 1px solid white;
+        }
+      }
+    }
+  }
+}

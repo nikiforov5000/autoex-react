@@ -2,55 +2,14 @@
   width: 490px;
   overflow: hidden;
 }
-.service-carousel-container .carousel {
-  width: 100%;
-  height: 300px;
-  transition: transform 1s;
-  display: flex;
-  flex-flow: row;
-}
-.service-carousel-container .carousel .image-container {
-  position: relative;
-  min-width: 100%;
-  height: 290px;
-}
-.service-carousel-container .carousel .image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.service-carousel-container .carousel-controls-container {
-  margin-top: 12px;
-  display: flex;
-  justify-content: space-between;
-}
-.service-carousel-container .carousel-controls-container .indicators {
-  width: 100%;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.service-carousel-container .carousel-controls-container .indicators .indicator {
-  margin-right: 10px;
-  width: 100%;
-  height: 1px;
-  border-top: 2px solid #888684;
-}
-.service-carousel-container .carousel-controls-container .indicators .indicator:last-child {
-  margin-right: 0;
-}
-.service-carousel-container .carousel-controls-container .indicators .indicator.active {
-  border-top: 2px solid white;
-}
-.service-carousel-container .carousel-controls-container button {
+.service-carousel-container button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   height: 19px;
   margin-left: 30px;
 }
-.service-carousel-container .carousel-controls-container button img {
+.service-carousel-container button img {
   max-height: 100%;
   max-width: 100%;
 }/*# sourceMappingURL=Carousel.css.map */

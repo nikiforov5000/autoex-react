@@ -1,0 +1,27 @@
+.carousel-controls-container {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel-controls-container .indicators {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-controls-container .indicators .indicator {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 100%;
+  padding: 12px 0;
+}
+.carousel-controls-container .indicators .indicator .line {
+  border-top: 3px solid #2b3034;
+}
+.carousel-controls-container .indicators .indicator:last-child {
+  margin-right: 0;
+}
+.carousel-controls-container .indicators .indicator.active .line {
+  border-top: 1px solid white;
+}/*# sourceMappingURL=CarouselIndicator.css.map */

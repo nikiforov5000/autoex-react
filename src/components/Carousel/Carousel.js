@@ -1,9 +1,14 @@
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import './Carousel.css'
+import CarouselItem from '../CarouselItem/CarouselItem'
+import CarouselIndicator from '../CarouselIndicator/CarouselIndicator'
 
 
 const Carousel = ({ service }) => {
   const images = service.media;
+
+  useEffect(() => { setCurrentIndex(0); }, [service]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -21,15 +26,13 @@ const Carousel = ({ service }) => {
         transform: `translateX(-${currentIndex * 100}%)`
       }}>
         {images.map((image, index) => (
-          <div className="image-container">
-            <img className={``} src={image} alt="" />
-          </div>
+          <CarouselItem src={image} key={index} alt={`Service media ${index} for ${service.title}`} />
         ))}
       </div>
       <div class="carousel-controls-container">
         <div className="indicators">
           {images.map((_, index) => (
-            <div className={`indicator ${currentIndex === index ? "active" : ""}`}></div>
+            <CarouselIndicator isActive={index === currentIndex} onClick={() => setCurrentIndex(index)} />
           ))}
         </div>
         <button className="button prev" onClick={prevImage}><img src="/images/arrow-prev.png" alt="placeholder" className="placeholder" /></button>
@@ -40,3 +43,6 @@ const Carousel = ({ service }) => {
 }
 
 export default Carousel;
+
+
+

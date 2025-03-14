@@ -1,0 +1,20 @@
+.service-details {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: space-between;
+
+  .service-details-text {
+    width: 490px;
+
+    h4 {
+      letter-spacing: 0.7px;
+      margin-bottom: 55px;
+    }
+
+    p {
+      line-height: 123%;
+    }
+  }
+}

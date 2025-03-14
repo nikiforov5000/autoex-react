@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import './Services.css';
 import ServiceItem from '../ServiceItem/ServiceItem';
-import Carousel from '../Carousel/Carousel'
+import ServiceDetails from '../ServiceDetails/ServiceDetails';
 import servicesData from '../../data/services.json';
 
-
-const Services = ({ onServiceSelect }) => {
-
+const Services = () => {
   const services = servicesData.services;
 
   const [selectedService, setSelectedService] = useState(servicesData.services.audio);
@@ -34,22 +32,6 @@ const Services = ({ onServiceSelect }) => {
         <ServiceDetails service={selectedService} />
       </div>
     </section>
-  );
-};
-
-
-const ServiceDetails = ({ service }) => {
-  return (
-    <div className="service-details">
-      <div className='service-details-text'>
-        <h4 className="text-white">{service.title}</h4>
-        <p className="text-white">
-          {service.description}
-        </p>
-      </div>
-      <Carousel service={service} />
-
-    </div>
   );
 };
 

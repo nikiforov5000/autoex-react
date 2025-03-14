@@ -12,21 +12,4 @@
   width: 100%;
   display: flex;
   flex-flow: row;
-}
-.section.section-services .wrapper .service-details {
-  margin-top: 82px;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  justify-content: space-between;
-}
-.section.section-services .wrapper .service-details .service-details-text {
-  width: 490px;
-}
-.section.section-services .wrapper .service-details .service-details-text h4 {
-  letter-spacing: 0.7px;
-  margin-bottom: 55px;
-}
-.section.section-services .wrapper .service-details .service-details-text p {
-  line-height: 123%;
 }/*# sourceMappingURL=Services.css.map */

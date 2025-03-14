@@ -3,16 +3,4 @@
 .service-carousel-container {
   width: 490px;
   overflow: hidden;
-
-  button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    height: 19px;
-    margin-left: 30px;
-    img {
-      max-height: 100%;
-      max-width: 100%;
-    }
-  }
 }

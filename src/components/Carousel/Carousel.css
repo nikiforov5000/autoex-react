@@ -1,15 +1,4 @@
 .service-carousel-container {
   width: 490px;
   overflow: hidden;
-}
-.service-carousel-container button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  height: 19px;
-  margin-left: 30px;
-}
-.service-carousel-container button img {
-  max-height: 100%;
-  max-width: 100%;
 }/*# sourceMappingURL=Carousel.css.map */

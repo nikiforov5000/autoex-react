@@ -176,4 +176,47 @@ body {
 .main-wrap .section .background-container {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+
+@media (max-width: 1280px) {
+  .main-wrap h1 {
+    font-size: 4.0625vw;
+  }
+  .main-wrap h2 {
+    font-size: 2.8125vw;
+  }
+  .main-wrap h3 {
+    font-size: 2.5vw;
+  }
+  .main-wrap h4 {
+    font-size: 2.1875vw;
+  }
+  .main-wrap p {
+    font-size: 1.40625vw;
+  }
+  .main-wrap h1,
+  .main-wrap h2,
+  .main-wrap h3,
+  .main-wrap h4,
+  .main-wrap p {
+    line-height: 130%;
+  }
+  .main-wrap .box-shadow {
+    filter: drop-shadow(0.78125vw 0.78125vw 0.78125vw rgba(0, 0, 0, 0.2));
+  }
+  .main-wrap p,
+  .main-wrap a {
+    font-size: 1.40625vw;
+    letter-spacing: 0.0078125vw;
+  }
+  .main-wrap h1,
+  .main-wrap h2,
+  .main-wrap h3,
+  .main-wrap h4 {
+    letter-spacing: 0.15625vw;
+  }
+  .main-wrap .section .background-container {
+    box-shadow: 0 1.171875vw 1.5625vw rgba(0, 0, 0, 0.15);
+    border-radius: 0.234375vw;
+  }
 }/*# sourceMappingURL=index.css.map */

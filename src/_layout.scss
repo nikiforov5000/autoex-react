@@ -1,7 +1,5 @@
 @import "colors";
 
-// @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
@@ -174,6 +172,62 @@ body {
     .background-container {
       box-shadow: 0 15px 20px rgba($color: #000000, $alpha: 0.15);
       border-radius: 3px;
+    }
+  }
+}
+
+@media (max-width: $section-width) {
+  .main-wrap {
+    h1 {
+      font-size: vw(52);
+    }
+
+    h2 {
+      font-size: vw(36);
+    }
+
+    h3 {
+      font-size: vw(32);
+    }
+
+    h4 {
+      font-size: vw(28);
+    }
+
+    p {
+      font-size: vw(18);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      line-height: 130%;
+    }
+
+    .box-shadow {
+      filter: drop-shadow(vw(10) vw(10) vw(10) rgba(0, 0, 0, 0.2));
+    }
+
+    p,
+    a {
+      font-size: vw(18);
+      letter-spacing: vw(0.1);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      letter-spacing: vw(2);
+    }
+
+    .section {
+      .background-container {
+        box-shadow: 0 vw(15) vw(20) rgba($color: #000000, $alpha: 0.15);
+        border-radius: vw(3);
+      }
     }
   }
 }

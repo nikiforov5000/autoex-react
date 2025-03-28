@@ -14,3 +14,11 @@ $color-white: #ffffff;
 $color-orange: #e7732e;
 
 $font-family-normal: "Inter", sans-serif;
+
+// @function vw($px) {
+//   @return (100 / $section-width * $px) * 1vw;
+// }
+
+@function vw($px) {
+  @return (($px / 1280) * 100) * 1vw; // vw(Convert ) to vw
+}

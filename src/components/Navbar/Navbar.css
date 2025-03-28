@@ -36,4 +36,24 @@
 .section.section-navbar .navbar-container .navbar-list .navbar-item a {
   text-decoration: none;
   color: #888684;
+}
+
+@media (max-width: 1280px) {
+  .section.section-navbar {
+    height: 7.8125vw;
+    -webkit-backdrop-filter: blur(0.78125vw);
+            backdrop-filter: blur(0.78125vw);
+  }
+  .section.section-navbar .navbar-container {
+    padding-left: 7.8125vw;
+    padding-right: 7.8125vw;
+  }
+  .section.section-navbar .navbar-container .logo-container {
+    margin-top: 0.15625vw;
+    height: 3.4375vw;
+    box-shadow: 0 0.390625vw 0.390625vw rgba(0, 0, 0, 0.2);
+  }
+  .section.section-navbar .navbar-container .logo-container img {
+    max-height: 100%;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

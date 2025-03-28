@@ -45,3 +45,26 @@
     }
   }
 }
+
+@media (max-width: $section-width) {
+  .section {
+    &.section-navbar {
+      height: vw(100);
+      backdrop-filter: blur(vw(10));
+
+      .navbar-container {
+        padding-left: vw(100);
+        padding-right: vw(100);
+        .logo-container {
+          margin-top: vw(2);
+          height: vw(44);
+          box-shadow: 0 vw(5) vw(5) rgba($color: #000000, $alpha: 0.2);
+
+          img {
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

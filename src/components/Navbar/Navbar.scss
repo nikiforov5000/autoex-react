@@ -17,9 +17,9 @@
       display: flex;
       flex-flow: row;
       justify-content: space-between;
-
       width: 100%;
-      padding: 18px $section-padding 0;
+      padding-left: $section-padding;
+      padding-right: $section-padding;
 
       .logo-container {
         margin-top: 2px;
@@ -30,15 +30,15 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+        justify-content: center;
 
         .navbar-item {
           margin-right: 0;
-          margin-bottom: 11px ;
+          // margin-bottom: 11px;
 
           a {
             text-decoration: none;
             color: $color-gray-4;
-
           }
         }
       }

@@ -6,3 +6,11 @@
     flex-flow: row;
   }
 }
+
+@media (max-width: $section-width) {
+  .section {
+    &.section-contact {
+      width: 100vw;
+    }
+  }
+}

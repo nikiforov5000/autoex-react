@@ -1,3 +1,5 @@
+@import '../../colors';
+
 .service-details {
   margin-top: 82px;
   display: flex;
@@ -15,6 +17,21 @@
 
     p {
       line-height: 123%;
+    }
+  }
+}
+
+@media (max-width: $section-width) {
+  .service-details {
+    margin-top: vw(82);
+  
+    .service-details-text {
+      width: vw(490);
+  
+      h4 {
+        letter-spacing: vw(0.7);
+        margin-bottom: vw(55);
+      }
     }
   }
 }

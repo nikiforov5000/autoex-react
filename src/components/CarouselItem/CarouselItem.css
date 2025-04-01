@@ -12,7 +12,21 @@
 }
 .carousel .image-container img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  -o-object-position: center;
+     object-position: center;
+  height: inherit;
+  width: auto;
+}
+
+@media (max-width: 1280px) {
+  .carousel {
+    height: 23.4375vw;
+  }
+  .carousel .image-container {
+    height: 22.65625vw;
+  }
 }/*# sourceMappingURL=CarouselItem.css.map */

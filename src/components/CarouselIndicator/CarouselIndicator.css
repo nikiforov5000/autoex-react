@@ -1,4 +1,5 @@
 .carousel-controls-container {
+  max-width: 100%;
   margin-top: 6px;
   display: flex;
   justify-content: space-between;
@@ -24,4 +25,21 @@
 }
 .carousel-controls-container .indicators .indicator.active .line {
   border-top: 1px solid white;
+}
+
+@media (max-width: 1280px) {
+  .carousel-controls-container {
+    margin-top: 0.46875vw;
+  }
+  .carousel-controls-container .indicators .indicator {
+    cursor: pointer;
+    margin-right: 0.78125vw;
+    padding: 0.9375vw 0;
+  }
+  .carousel-controls-container .indicators .indicator .line {
+    border-top: 0.234375vw solid #2b3034;
+  }
+  .carousel-controls-container .indicators .indicator.active .line {
+    border-top: 0.078125vw solid white;
+  }
 }/*# sourceMappingURL=CarouselIndicator.css.map */

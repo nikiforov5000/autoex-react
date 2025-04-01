@@ -8,4 +8,11 @@ button {
 button img {
   max-height: 100%;
   max-width: 100%;
+}
+
+@media (max-width: 1280px) {
+  button {
+    height: 1.484375vw;
+    margin-left: 2.34375vw;
+  }
 }/*# sourceMappingURL=CarouselIndicatorButton.css.map */

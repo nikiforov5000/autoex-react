@@ -18,3 +18,11 @@
     margin-right: 0;
   }
 }
+
+
+@media (max-width: $section-width) {
+  .item {
+    margin-top: vw(14);
+    margin-right: vw(10);
+  }
+}

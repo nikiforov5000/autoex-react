@@ -19,3 +19,17 @@
     }
   }
 }
+
+@media (max-width: $section-width) {
+  .about {
+
+    .wrapper {
+      padding: vw(52) vw(50) vw(52) vw(100);
+  
+      h4 {
+        letter-spacing: vw(0.6);
+        margin-bottom: vw(75);
+      }
+    }
+  }
+}

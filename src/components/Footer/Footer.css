@@ -10,4 +10,13 @@
 .section.section-footer .wrapper p {
   margin: auto;
   color: #4d5154;
+}
+
+@media (max-width: 1280px) {
+  .section.section-footer {
+    width: 100vw;
+  }
+  .section.section-footer .wrapper {
+    height: 7.8125vw;
+  }
 }/*# sourceMappingURL=Footer.css.map */

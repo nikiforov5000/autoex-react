@@ -19,3 +19,16 @@
     }
   }
 }
+
+@media (max-width: $section-width) {
+  .section {
+    &.section-services {
+      width: 100vw;  
+      height: vw(592);
+  
+      .wrapper {
+        padding: 0 vw(100);
+      }
+    }
+  }
+}

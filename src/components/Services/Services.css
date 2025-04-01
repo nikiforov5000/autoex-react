@@ -12,4 +12,14 @@
   width: 100%;
   display: flex;
   flex-flow: row;
+}
+
+@media (max-width: 1280px) {
+  .section.section-services {
+    width: 100vw;
+    height: 46.25vw;
+  }
+  .section.section-services .wrapper {
+    padding: 0 7.8125vw;
+  }
 }/*# sourceMappingURL=Services.css.map */

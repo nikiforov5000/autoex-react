@@ -11,3 +11,10 @@ button {
     max-width: 100%;
   }
 }
+
+@media (max-width: $section-width) {
+  button {
+    height: vw(19);
+    margin-left: vw(30);
+  }
+}

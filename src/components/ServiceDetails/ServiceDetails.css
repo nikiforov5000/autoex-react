@@ -14,4 +14,17 @@
 }
 .service-details .service-details-text p {
   line-height: 123%;
+}
+
+@media (max-width: 1280px) {
+  .service-details {
+    margin-top: 6.40625vw;
+  }
+  .service-details .service-details-text {
+    width: 38.28125vw;
+  }
+  .service-details .service-details-text h4 {
+    letter-spacing: 0.0546875vw;
+    margin-bottom: 4.296875vw;
+  }
 }/*# sourceMappingURL=ServiceDetails.css.map */

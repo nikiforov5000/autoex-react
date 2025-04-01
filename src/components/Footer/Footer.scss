@@ -17,3 +17,15 @@
     }
   }
 }
+
+@media (max-width: $section-width) {
+  .section {
+    &.section-footer {
+      width: 100vw;
+  
+      .wrapper {
+        height: vw(100);
+      }
+    }
+  }
+}

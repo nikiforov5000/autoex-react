@@ -4,3 +4,10 @@
   width: 490px;
   overflow: hidden;
 }
+
+@media (max-width: $section-width) {
+  .service-carousel-container {
+    width: vw(490);
+    overflow: hidden;
+  }
+}

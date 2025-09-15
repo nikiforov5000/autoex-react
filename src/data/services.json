@@ -3,12 +3,12 @@
     "graphics": {
       "media": ["/images/service-graphics-placeholder.jpg"],
       "title": "Производство 2D и 3D графики",
-      "description": "Мы создаем промо-ролики, рекламные и корпоративные материалы, анимацию для брендов и продуктов. Наша команда использует современные технологии для визуально привлекательного и профессионального результата."
+      "description": "Мы создаем промо-ролики, рекламные и корпоративные материалы, анимацию для брендов и продуктов. Наш опыт позволяет работать быстро и качественно, брать на себя нестандартные задачи и реализовывать проекты любой сложности в сжатые сроки."
     },
     "localization": {
       "media": ["/images/service-localization-placeholder.jpg", "/images/service-localization-placeholder.jpg", "/images/service-localization-placeholder.jpg", "/images/service-localization-placeholder.jpg", "/images/service-localization-placeholder.jpg"],
       "title": "Адаптация видео",
-      "description": "Мы адаптируем видео любой сложности: монтаж, титрование, изменений продуктов для нужных рынков, добавдление графики и удаление элементов. Адаптируем ролики под различные рынки: Казахстан, Узбекистан, Азербайджан, Грузию, Монголию."
+      "description": "Мы адаптируем видео любой сложности: монтаж, титрование, изменений продуктов для нужных рынков, добавление графики и удаление элементов. Адаптируем ролики под различные рынки: Казахстан, Кыргызстан, Узбекистан, Азербайджан, Грузию, Монголию."
     },
     "socials": {
       "media": ["/images/service-socials-placeholder.jpg", "/images/service-socials-placeholder.jpg", "/images/service-socials-placeholder.jpg", "/images/service-socials-placeholder.jpg", "/images/service-socials-placeholder.jpg"],
@@ -17,8 +17,8 @@
     },
     "dev": {
       "media": ["/images/service-dev-placeholder.jpg", "/images/service-dev-placeholder.jpg", "/images/service-dev-placeholder.jpg", "/images/service-dev-placeholder.jpg", "/images/service-dev-placeholder.jpg"],
-      "title": "Разработка сайтов и лендингов",
-      "description": "Наше новое направление – создание сайтов и лендингов для бизнеса. Разрабатываем удобные, адаптивные решения, которые помогают брендам взаимодействовать с аудиторией и продавать эффективнее."
+      "title": "Производство корпоративных фильмов и видеороликов",
+      "description": "Мы разрабатываем корпоративные фильмы и видеоролики «под ключ»: видеосъемка, монтаж, инфографика, 2D/3D графика, озвучивание."
     },
     "pharma": {
       "media": ["/images/service-pharma-placeholder.jpg", "/images/service-pharma-placeholder.jpg", "/images/service-pharma-placeholder.jpg", "/images/service-pharma-placeholder.jpg", "/images/service-pharma-placeholder.jpg"],
@@ -32,3 +32,4 @@
     }
   }
 }
+

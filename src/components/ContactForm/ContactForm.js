@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import './ContactForm.css'
+import "./ContactForm.css";
 
 const ContactForm = () => {
-
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -14,16 +14,16 @@ const ContactForm = () => {
     console.log(name, value);
 
     switch (name) {
-      case 'name':
+      case "name":
         setName(value);
         break;
-      case 'email':
+      case "email":
         setEmail(value);
         break;
-      case 'phone':
+      case "phone":
         setPhone(value);
         break;
-      case 'message':
+      case "message":
         setMessage(value);
         break;
       default:
@@ -31,23 +31,32 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
 
-    //replace with actual request
-    console.log("Sending data to a server... piupiu..");
+    try {
+      const response = await fetch("/api/sendmail.php", {
+        method: "POST",
+        // body: new URLSearchParams(formData),
+        body: `${name}`,
+      });
+      const result = await response.text();
 
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
-  }
-
+      if (result === "success") {
+        setStatus("Message sent!");
+      } else {
+        setStatus("Failed to send. Try again later.");
+      }
+    } catch (err) {
+      setStatus("Error sending message.");
+    }
+  };
 
   return (
     <div className="contact-form">
       <div class="wrapper">
-        <form action="" method="get" class="form-contact">
+        <form onSubmit={handleSubmit} method="get" class="form-contact">
           <input
             type="text"
             name="name"
@@ -64,7 +73,8 @@ const ContactForm = () => {
             placeholder="Enter your e-mail"
             value={email}
             onChange={handleInputChange}
-            required />
+            required
+          />
           <input
             type="tel"
             name="phone"
@@ -72,7 +82,8 @@ const ContactForm = () => {
             placeholder="Enter your phone number"
             value={phone}
             onChange={handleInputChange}
-            required />
+            required
+          />
           <textarea
             className="text"
             type="text"

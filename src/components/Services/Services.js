@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-import './Services.css';
-import ServiceItem from '../ServiceItem/ServiceItem';
-import ServiceDetails from '../ServiceDetails/ServiceDetails';
-import servicesData from '../../data/services.json';
+import React, { useState } from "react";
+import "./Services.css";
+import ServiceItem from "../ServiceItem/ServiceItem";
+import ServiceDetails from "../ServiceDetails/ServiceDetails";
+import servicesData from "../../data/services.json";
 
 const Services = () => {
   const services = servicesData.services;
 
-  const [selectedService, setSelectedService] = useState(servicesData.services.audio);
+  const [selectedService, setSelectedService] = useState(
+    servicesData.services.graphics
+  );
 
   const handleServiceSelect = (serviceKey) => {
     const service = servicesData.services[serviceKey];

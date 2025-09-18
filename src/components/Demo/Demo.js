@@ -1,12 +1,14 @@
-import React, { useLayoutEffect } from "react";
 import "./Demo.css";
 
 function Demo() {
+  const youtubeParams = "autoplay=1&controls=0&mute=1";
+
   return (
     <section className="section section-demo">
       <div className="iframe-container">
         <iframe
-          src="https://www.youtube.com/embed/SSO-eB9Up0U"
+          title="demo"
+          src={`https://www.youtube.com/embed/SSO-eB9Up0U?${youtubeParams}`}
           frameborder="0"
           allowfullscreen
         ></iframe>

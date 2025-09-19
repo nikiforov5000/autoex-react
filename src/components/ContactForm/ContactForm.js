@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import { useState, useRef } from "react";
 import "./ContactForm.css";
+import SendFormStatus from "../SendFormStatus/SendFormStatus";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState(" ");
+  const timerId = useRef(null);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
-    console.log(name, value);
 
     switch (name) {
       case "name":
@@ -31,6 +31,13 @@ const ContactForm = () => {
     }
   };
 
+  const resetInput = () => {
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -38,13 +45,14 @@ const ContactForm = () => {
     try {
       const response = await fetch("/api/sendmail.php", {
         method: "POST",
-        // body: new URLSearchParams(formData),
-        body: `${name}`,
+        body: new URLSearchParams({name, message, email}),
       });
       const result = await response.text();
+      resetInput();
 
       if (result === "success") {
         setStatus("Message sent!");
+        setTimeout(() => setStatus(" "), 5000);
       } else {
         setStatus("Failed to send. Try again later.");
       }
@@ -56,7 +64,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form">
       <div class="wrapper">
-        <form onSubmit={handleSubmit} method="get" class="form-contact">
+        <form class="form-contact">
           <input
             type="text"
             name="name"
@@ -96,7 +104,8 @@ const ContactForm = () => {
             maxLength="256"
             required
           />
-          <input className="button" type="submit" value="Submit" />
+          <button className="button" onClick={handleSubmit}>Send</button>
+          <SendFormStatus status={status} />
         </form>
       </div>
     </div>

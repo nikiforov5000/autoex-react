@@ -1,35 +1,39 @@
-
 import { useState, useEffect } from "react";
-import './Carousel.css'
-import CarouselItem from '../CarouselItem/CarouselItem'
-import CarouselIndicator from '../CarouselIndicator/CarouselIndicator'
+import "./Carousel.css";
+import CarouselItem from "../CarouselItem/CarouselItem";
+import CarouselIndicator from "../CarouselIndicator/CarouselIndicator";
 import CarouselIndicatorButton from "../CarouselIndicatorButton/CarouselIndicatorButton";
 
-
-const Carousel = ({ service }) => {
-  const images = service.media;
-
-  useEffect(() => { setCurrentIndex(0); }, [service]);
+const Carousel = ({ images }) => {
+  useEffect(() => {
+    setCurrentIndex(0);
+  }, [images]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  }
+  };
   const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  }
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    );
+  };
 
   return (
-    <div className='service-carousel-container'>
-      <div className="carousel" style={{
-        transform: `translateX(-${currentIndex * 100}%)`
-      }}>
+    <div className="service-carousel-container">
+      <div
+        className="carousel"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+        }}
+      >
         {images.map((image, index) => (
           <CarouselItem
             src={image}
             key={index}
-            alt={`Service media ${index} for ${service.title}`} />
+            alt={`Service media ${index} for`}
+          />
         ))}
       </div>
       <div class="carousel-controls-container">
@@ -37,18 +41,21 @@ const Carousel = ({ service }) => {
           {images.map((_, index) => (
             <CarouselIndicator
               isActive={index === currentIndex}
-              onClick={() => setCurrentIndex(index)} />
+              onClick={() => setCurrentIndex(index)}
+            />
           ))}
         </div>
         <CarouselIndicatorButton
           direction={"prev"}
-          onClick={() => prevImage()} />
+          onClick={() => prevImage()}
+        />
         <CarouselIndicatorButton
           direction={"next"}
-          onClick={() => nextImage()} />
+          onClick={() => nextImage()}
+        />
       </div>
     </div>
   );
-}
+};
 
 export default Carousel;

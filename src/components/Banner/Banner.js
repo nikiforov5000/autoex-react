@@ -1,14 +1,15 @@
-import React from 'react';
-import './Banner.css';
+import "./Banner.css";
+import { useTranslation } from "react-i18next";
 
 const Banner = () => {
+  const { t } = useTranslation();
   return (
     <section class="section section-banner">
       <div className="background-image"></div>
       <div className="wrapper">
-        <h1 className='text-center text-white'>Autoex</h1>
-        <h3 className='text-center text-white'>Production Studio</h3>
-        <p className='text-center'>since 2010</p>
+        <h1 className="text-center text-white">{t("banner.title")}</h1>
+        <h3 className="text-center text-white">{t("banner.subline1")}</h3>
+        <p className="text-center">{t("banner.subline2")}</p>
       </div>
     </section>
   );

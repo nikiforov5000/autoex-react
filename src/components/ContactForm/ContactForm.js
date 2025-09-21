@@ -1,4 +1,6 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import "./ContactForm.css";
 import SendFormStatus from "../SendFormStatus/SendFormStatus";
 
@@ -8,7 +10,8 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(" ");
-  const timerId = useRef(null);
+
+  const { t } = useTranslation();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -36,28 +39,28 @@ const ContactForm = () => {
     setEmail("");
     setPhone("");
     setMessage("");
-  }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus(t("contact-form.send-status.sending"));
 
     try {
       const response = await fetch("/api/sendmail.php", {
         method: "POST",
-        body: new URLSearchParams({name, message, email}),
+        body: new URLSearchParams({ name, message, email }),
       });
       const result = await response.text();
       resetInput();
 
       if (result === "success") {
-        setStatus("Message sent!");
+        setStatus(t("contact-form.send-status.success"));
         setTimeout(() => setStatus(" "), 5000);
       } else {
-        setStatus("Failed to send. Try again later.");
+        setStatus(t("contact-form.send-status.error"));
       }
     } catch (err) {
-      setStatus("Error sending message.");
+      setStatus(t("contact-form.send-status.fail"));
     }
   };
 
@@ -69,7 +72,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             id="name"
-            placeholder="Enter your name"
+            placeholder={t("contact-form.placeholder.name")}
             value={name}
             onChange={handleInputChange}
             required
@@ -78,7 +81,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             id="email"
-            placeholder="Enter your e-mail"
+            placeholder={t("contact-form.placeholder.email")}
             value={email}
             onChange={handleInputChange}
             required
@@ -87,7 +90,7 @@ const ContactForm = () => {
             type="tel"
             name="phone"
             id="phone"
-            placeholder="Enter your phone number"
+            placeholder={t("contact-form.placeholder.phone")}
             value={phone}
             onChange={handleInputChange}
             required
@@ -97,14 +100,16 @@ const ContactForm = () => {
             type="text"
             name="message"
             id="message"
-            placeholder="Enter your message"
+            placeholder={t("contact-form.placeholder.message")}
             value={message}
             onChange={handleInputChange}
             minLength="5"
             maxLength="256"
             required
           />
-          <button className="button" onClick={handleSubmit}>Send</button>
+          <button className="button" onClick={handleSubmit}>
+            {t("contact-form.send-button")}
+          </button>
           <SendFormStatus status={status} />
         </form>
       </div>

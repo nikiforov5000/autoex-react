@@ -1,15 +1,17 @@
-import aboutData from '../../data/about.json';
-import './About.css';
+import { useTranslation } from "react-i18next";
+import "./About.css";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <div class="about">
       <div class="wrapper">
-        <h4 className='title'>{aboutData.title}</h4>
-        <p className='description'>{aboutData.description}</p>
+        <h4 className="title">{t("about.title")}</h4>
+        <p className="description">{t("about.description")}</p>
       </div>
     </div>
   );
 };
 
-export default About
+export default About;

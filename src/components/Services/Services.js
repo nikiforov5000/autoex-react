@@ -1,18 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Services.css";
 import ServiceItem from "../ServiceItem/ServiceItem";
 import ServiceDetails from "../ServiceDetails/ServiceDetails";
-import servicesData from "../../data/services.json";
+import { services } from "../../data/services";
 
 const Services = () => {
-  const services = servicesData.services;
+  const [selectedService, setSelectedService] = useState(services[0]);
 
-  const [selectedService, setSelectedService] = useState(
-    servicesData.services.graphics
-  );
-
-  const handleServiceSelect = (serviceKey) => {
-    const service = servicesData.services[serviceKey];
+  const handleServiceSelect = (index) => {
+    const service = services[index];
     if (service) {
       setSelectedService(service);
     }
@@ -22,12 +18,12 @@ const Services = () => {
     <section className="section section-services">
       <div className="wrapper">
         <div className="item-list">
-          {Object.entries(services).map(([key, service]) => (
+          {services.map((service, index) => (
             <ServiceItem
-              key={key}
+              key={service.id}
               service={service}
-              onClick={() => handleServiceSelect(key)}
-              isSelected={selectedService === services[key]}
+              onClick={() => handleServiceSelect(index)}
+              isSelected={selectedService === services[index]}
             />
           ))}
         </div>
